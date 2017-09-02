@@ -15,9 +15,13 @@
 ![输入图片说明](http://git.oschina.net/uploads/images/2017/0223/081836_cf8c1eca_1110335.png "在这里输入图片标题")
 ![输入图片说明](http://git.oschina.net/uploads/images/2017/0223/081845_581684b4_1110335.png "在这里输入图片标题")
 
-3.进入http://localhost:8080/Spring-rabbitMQ/demo 可向rabbitMQ发送消息，如下图：
+3.direct直连交换机通信模型，包括一个direct交换机，三个binding，两个队列，两个消费者监听器，消息只会被投入到routingkey一致的队列中
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0902/111518_ec24f2cf_1110335.png "3.png")
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0902/111713_388a2cb4_1110335.png "5.png")
 
-![输入图片说明](http://git.oschina.net/uploads/images/2017/0223/081855_8ab28ce4_1110335.png "在这里输入图片标题")
+4.进入http://localhost:8080/Spring-rabbitMQ/demo 可向rabbitMQ发送消息，如下图：
+
+
 
  
 
