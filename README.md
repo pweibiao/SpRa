@@ -20,7 +20,12 @@
 - ![输入图片说明](https://git.oschina.net/uploads/images/2017/0902/111518_ec24f2cf_1110335.png "3.png")
 - ![输入图片说明](https://git.oschina.net/uploads/images/2017/0902/111713_388a2cb4_1110335.png "5.png")
 
-4.进入http://localhost:8080/Spring-rabbitMQ/demo 可向rabbitMQ发送消息，如下图：
+- 4.topic主题交换机通信，包括一个topic交换机，三个binding，两个队列，两个消费者监听器，消息只会被投入到routingkey能够匹配的队列中，#表示0个或若干个关键字，*表示一个关键字
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0902/122830_278b8f19_1110335.png "4.png")
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0902/122904_a0229951_1110335.png "6.png")
+
+- 5.进入http://localhost:8080/Spring-rabbitMQ/demo 可向rabbitMQ发送消息，如下图：
+- ![输入图片说明](https://git.oschina.net/uploads/images/2017/0902/122918_5adae2c4_1110335.png "QQ截图20170902122553.png")
 
 
 
