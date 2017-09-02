@@ -21,6 +21,7 @@ public class ProducerConsumerConfig {
 	       return queue;
 	    }
 	    
+	 	/*
 	    //消费者监听器1
 	    @Bean
 	    public QueueListener1 queueListener1() {
@@ -66,4 +67,5 @@ public class ProducerConsumerConfig {
 		    container.setQueues(myQueue());
 		    return container;
 	    }
+	    */
 }

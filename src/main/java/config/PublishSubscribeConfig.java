@@ -51,6 +51,7 @@ public class PublishSubscribeConfig {
  		return binding;
  	}
  	
+ 	/*
  	 //订阅者监听器1
     @Bean
     public SubscribeListener1 subscribeListener1() {
@@ -96,4 +97,5 @@ public class PublishSubscribeConfig {
 	    container.setQueues(myQueue2());
 	    return container;
     }
+    */
 }
