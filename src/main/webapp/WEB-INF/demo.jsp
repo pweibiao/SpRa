@@ -134,6 +134,45 @@
 					</div>
 </div>
 	  </div>
+	  <div class="col-md-6">
+	  	<div class="panel panel-default">
+			<div class="panel-heading">topic交换机模型，向匹配的routing key发送消息</div>
+			<div class="panel-body">
+			<img src="./img/4.png" width="100%" alt="发布-订阅模型" class="img-rounded">
+						<form id="f4" class="form-horizontal" role="form">
+							<div class="form-group">
+								<label for="mailid" class="col-sm-2 control-label">mailid</label>
+								<div class="col-sm-10">
+									<input type="text" name="mailId" class="form-control" id="mailid" placeholder="mailid">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="country" class="col-sm-2 control-label">country</label>
+								<div class="col-sm-10">
+									<input type="text" name="country" class="form-control" id="country" placeholder="country">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="weight" class="col-sm-2 control-label">weight</label>
+								<div class="col-sm-10">
+									<input type="text" name="weight" class="form-control" id="weight" placeholder="weight">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="weight" class="col-sm-3 control-label">Routing key</label>
+								<div class="col-sm-9">
+									<input type="text" name="routingkey" class="form-control" id="weight" placeholder="routingkey"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<button id="mytopic" type="button" class="btn btn-default">发布消息</button>
+								</div>
+							</div>
+						</form>
+					</div>
+</div>
+	  </div>
   </div>
 </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -156,6 +195,12 @@
 	  
 	  $("#direct").click(function(){
 	    $.post("direct",$("#f3").serialize(),function(){
+	    	alert("发布成功");
+	    });
+	  });
+	  
+	  $("#mytopic").click(function(){
+	    $.post("mytopic",$("#f4").serialize(),function(){
 	    	alert("发布成功");
 	    });
 	  });

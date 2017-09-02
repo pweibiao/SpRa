@@ -20,6 +20,10 @@ public class PublisherImpl implements Publisher{
 		rabbitTemplate.convertAndSend("direct", routingkey, mail);
 	}
 
+	public void sendtopicMail(Mail mail, String routingkey) {
+		rabbitTemplate.convertAndSend("mytopic", routingkey, mail);
+	}
+
 	
 	
 }

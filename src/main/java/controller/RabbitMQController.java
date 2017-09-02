@@ -40,6 +40,13 @@ public class RabbitMQController {
 		publisher.senddirectMail(m, mail.getRoutingkey());
 	}
 	
+	@RequestMapping(value="/mytopic",produces = {"application/json;charset=UTF-8"})
+	@ResponseBody
+	public void topic(@ModelAttribute("mail")TopicMail mail){
+		Mail m=new Mail(mail.getMailId(),mail.getCountry(),mail.getWeight());
+		publisher.sendtopicMail(m, mail.getRoutingkey());
+	}
+	
 	
 	@RequestMapping("demo")
 	public String demo(){
