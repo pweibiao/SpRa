@@ -69,5 +69,9 @@
 28. [Spring整合SolrJ实现全文检索](https://gitee.com/shenzhanwang/Spring-solr)
  
 
+### 捐赠
+![输入图片说明](https://gitee.com/uploads/images/2017/1217/145453_b639d3db_1110335.png "mm_facetoface_collect_qrcode_1513493342741.png")
+
+![输入图片说明](https://gitee.com/uploads/images/2017/1217/145502_2d4fe513_1110335.jpeg "1513493369523.jpg")
 
 
