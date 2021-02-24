@@ -14,35 +14,41 @@ public class TopicExchangeConfig {
 		TopicExchange topicExchange=new TopicExchange("mytopic");
  		return topicExchange;
  	}
-	
+
 	@Bean
     public Queue topicQueue1() {
        Queue queue=new Queue("topicqueue1");
        return queue;
     }
- 	
+
  	@Bean
     public Queue topicQueue2() {
        Queue queue=new Queue("topicqueue2");
        return queue;
     }
-	
+
+    @Bean
+	public Queue topicQueue3(){
+		Queue queue = new Queue("topicqueue3");
+		return queue;
+	}
+
  	//3个binding将交换机和相应队列连起来
  	@Bean
  	public Binding bindingtopic1(){
  		Binding binding=BindingBuilder.bind(topicQueue1()).to(topicExchange()).with("*.orange.*");//binding key
  		return binding;
  	}
- 	
+
  	@Bean
  	public Binding bindingtopic2(){
  		Binding binding=BindingBuilder.bind(topicQueue2()).to(topicExchange()).with("*.*.rabbit");
  		return binding;
  	}
- 	
+
  	@Bean
  	public Binding bindingtopic3(){
- 		Binding binding=BindingBuilder.bind(topicQueue2()).to(topicExchange()).with("lazy.#");//#表示0个或若干个关键字，*表示一个关键字
+ 		Binding binding=BindingBuilder.bind(topicQueue3()).to(topicExchange()).with("lazy.#");//#表示0个或若干个关键字，*表示一个关键字
  		return binding;
  	}
 }
